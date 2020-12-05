@@ -1,0 +1,248 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="TrangChu.master.cs" Inherits="BTL_NHom9_TinTuc.TrangChu" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style>
+        body{
+            background-image:url('Anh/anhnennnnn.PNG');
+        }
+        .menu ul li{
+    list-style-type: none;
+    height: 30px;
+    line-height: 40px;
+    background-color: #2fa1b3;
+    width: 110px;
+    float: left;
+    border:1px solid white;
+    text-align: center;
+}
+.menu ul li a{
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    display: block;
+}
+ul li:hover{
+    background-color: silver;
+}
+ul li ul li{
+    display: none;
+}
+ul li:hover ul li{
+    display: block;
+}
+/*menu ben duoi*/
+.menu1 ul li{
+    list-style-type: none;
+    height: 18px;
+    line-height: 20px;
+    width: 65px;
+    float: left;
+    text-align: center;
+}
+.menu1{
+   margin-left:200px;
+}
+.menu1 ul li a{
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    display: block;
+    font-size:10px;
+}
+ .menu1 ul li:hover{
+    background-color: silver;
+}
+ .menu1 ul li ul li{
+    display: none;
+}
+.menu1 ul li:hover ul li{
+    display: block;
+    text-align:center;
+}
+
+footer{
+    background-color:silver;
+    height:120px;
+}
+header{
+    height:100px;
+    background-color:red;
+}
+.nd{
+    height:500px;
+}
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+       <header></header>
+        <div class="menu">
+            <ul>
+                <li> <a href="#">SAO</a>
+                    <ul>
+                        <li><a href="#">Star</a></li>
+                        <li><a href="#">Sao Việt</a></li>
+                    </ul>
+                </li>
+                <li> <a href="#">MOVIES</a>
+                    <ul>
+                        <li><a href="#">Châu Á</a></li>
+                        <li><a href="#">Âu-Mỹ</a></li>
+                         <li><a href="#">Việt Nam</a></li>
+                    </ul>
+                </li>
+                 <li> <a href="#">SOUND</a>
+                    <ul>
+                        <li><a href="#">Châu Á</a></li>
+                        <li><a href="#">Âu-Mỹ</a></li>
+                         <li><a href="#">Việt Nam</a></li>
+                    </ul>
+                </li>
+                <li> <a href="#">NGƯỜI ĐẸP</a>
+                    <ul>
+                        <li><a href="#">Đường cong</a></li>
+                        <li><a href="#">Sáu múi</a></li>
+                         <li><a href="#">Thời trang</a></li>
+                         <li><a href="#">Khỏe đẹp</a></li>
+                    </ul>
+                </li>
+               
+                <li> <a href="#">T/HÌNH</a>
+                    <ul>
+                        <li><a href="#">Phim truyền hình</a></li>
+                        <li><a href="#">TV Show</a></li>
+                    </ul>
+                </li>
+                <li> <a href="#">LOVE</a>
+                    <ul>
+                        <li><a href="#">Chuyện Tình</a></li>
+                      
+                    </ul>
+                </li>
+                <li> <a href="#">LIFE</a>
+                    <ul>
+                        <li><a href="#">Hot News</a></li>
+                        <li><a href="#">Sống đẹp</a></li>
+                         <li><a href="#">Nhân vật</a></li>
+                    </ul>
+                </li>
+                 <li> <a href="#">DU HÍ</a>
+                    <ul>
+                        <li><a href="#">Điểm đến</a></li>
+                        <li><a href="#">Sành ăn</a></li>
+                         <li><a href="#">lạ</a></li>
+                    </ul>
+                </li>
+                 <li> <a href="#">Video</a>
+                    <ul>
+                        <li><a href="#">Video HOT</a></li>
+                        <li><a href="#">Phim</a></li>
+                         <li><a href="#">Nhạc</a></li>
+                        <li><a href="#">Giải trí</a></li>
+                    </ul>
+                </li>
+                <li> 
+                    <asp:TextBox ID="txttk" runat="server" Width="99px" CssClass="timkiem" placeholder="Bạn muốn tìm?"></asp:TextBox> 
+                </li>
+                  <li> 
+                    <asp:Button ID="bttk" runat="server" Text="Tìm Kiếm" Width="89px" />
+                </li>
+               
+                
+
+            </ul>
+        </div>  
+        <br />
+        <div class="nd">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+               
+            </asp:ContentPlaceHolder>
+        </div>
+        <br />
+            <footer>
+            </footer>
+        <div style="display:flex; height:30px;background-color:black">
+            <div>
+                <p style="text-align:center;color:white;font-size:12px; margin-bottom: 18px; margin-left:100px">© Copyright 2015 - Văn Hoá Giải Trí</p>
+            </div>
+            <div>
+                 <div class="menu1">
+            <ul>
+                <li> <a href="#">SAO</a>
+                    <ul>
+                        <li><a href="#">Star</a></li>
+                        <li><a href="#">Sao Việt</a></li>
+                    </ul>
+                </li>
+                <li> <a href="#">MOVIES</a>
+                    <ul>
+                        <li><a href="#">Châu Á</a></li>
+                        <li><a href="#">Âu-Mỹ</a></li>
+                         <li><a href="#">Việt Nam</a></li>
+                    </ul>
+                </li>
+                 <li> <a href="#">SOUND</a>
+                    <ul>
+                        <li><a href="#">Châu Á</a></li>
+                        <li><a href="#">Âu-Mỹ</a></li>
+                         <li><a href="#">Việt Nam</a></li>
+                    </ul>
+                </li>
+                <li> <a href="#">NGƯỜI ĐẸP</a>
+                    <ul>
+                        <li><a href="#">Đường cong</a></li>
+                        <li><a href="#">Sáu múi</a></li>
+                         <li><a href="#">Thời trang</a></li>
+                         <li><a href="#">Khỏe đẹp</a></li>
+                    </ul>
+                </li>
+               
+                <li> <a href="#">T/HÌNH</a>
+                    <ul>
+                        <li><a href="#">Phim truyền hình</a></li>
+                        <li><a href="#">TV Show</a></li>
+                    </ul>
+                </li>
+                <li> <a href="#">LOVE</a>
+                    <ul>
+                        <li><a href="#">Chuyện Tình</a></li>
+                      
+                    </ul>
+                </li>
+                <li> <a href="#">LIFE</a>
+                    <ul>
+                        <li><a href="#">Hot News</a></li>
+                        <li><a href="#">Sống đẹp</a></li>
+                         <li><a href="#">Nhân vật</a></li>
+                    </ul>
+                </li>
+                 <li> <a href="#">DU HÍ</a>
+                    <ul>
+                        <li><a href="#">Điểm đến</a></li>
+                        <li><a href="#">Sành ăn</a></li>
+                         <li><a href="#">lạ</a></li>
+                    </ul>
+                </li>
+                 <li> <a href="#">Video</a>
+                    <ul>
+                        <li><a href="#">Video HOT</a></li>
+                        <li><a href="#">Phim</a></li>
+                         <li><a href="#">Nhạc</a></li>
+                        <li><a href="#">Giải trí</a></li>
+                    </ul>
+                </li>
+                
+
+            </ul>
+        </div>  
+            </div>
+        </div>
+    </form>
+</body>
+</html>
